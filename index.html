@@ -130,6 +130,16 @@
   .pblock p{font-size:14.5px;color:#C9CFDB;}
   .impact{border-left:2px solid var(--signal);padding-left:14px;margin-top:16px;}
   .impact p{color:var(--paper);font-size:14.5px;}
+  .doc-link{
+    display:inline-flex;align-items:center;gap:8px;margin-top:18px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.02em;
+    color:var(--signal);text-decoration:none;border:1px solid var(--line);
+    padding:8px 12px;border-radius:2px;transition:.15s;
+  }
+  .doc-link:hover{border-color:var(--signal);background:rgba(77,216,192,0.06);}
+  .doc-link-icon{font-size:10px;}
+  .doc-link-arrow{transition:transform .15s;}
+  .doc-link:hover .doc-link-arrow{transform:translateX(3px);}
 
   /* ---- timeline ---- */
   .timeline{display:flex;flex-direction:column;}
@@ -252,6 +262,9 @@
           <div class="pblock"><div class="k">Problem</div><p>A business-critical quality dashboard needed to migrate to new infrastructure on a tight timeline, with zero tolerance for reporting disruption to global leadership.</p></div>
           <div class="pblock"><div class="k">Approach</div><p>Owned the full migration lifecycle — requirements, dataset migration, validation, UAT, and post-launch monitoring — coordinating Data Engineering, QAOps, and Product; co-developed the Quality Cube framework for structured quality improvement.</p></div>
           <div class="impact"><p>Delivered in 3 weeks, ahead of deadline, with zero operational disruption. The new dashboard reached 1,964 views and 44 unique viewers; Quality Cube was later adopted by Vendor Management.</p></div>
+          <a class="doc-link" href="UAT_Plan_Dashboard_Migration_Syafriandi.pdf" target="_blank" rel="noopener">
+            <span class="doc-link-icon">◆</span> View UAT Plan (PDF) <span class="doc-link-arrow">→</span>
+          </a>
         </div>
       </div>
 
