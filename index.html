@@ -140,6 +140,7 @@
   .doc-link-icon{font-size:10px;}
   .doc-link-arrow{transition:transform .15s;}
   .doc-link:hover .doc-link-arrow{transform:translateX(3px);}
+  .doc-links-row{display:flex;flex-wrap:wrap;gap:10px;}
 
   /* ---- timeline ---- */
   .timeline{display:flex;flex-direction:column;}
@@ -262,9 +263,14 @@
           <div class="pblock"><div class="k">Problem</div><p>A business-critical quality dashboard needed to migrate to new infrastructure on a tight timeline, with zero tolerance for reporting disruption to global leadership.</p></div>
           <div class="pblock"><div class="k">Approach</div><p>Owned the full migration lifecycle — requirements, dataset migration, validation, UAT, and post-launch monitoring — coordinating Data Engineering, QAOps, and Product; co-developed the Quality Cube framework for structured quality improvement.</p></div>
           <div class="impact"><p>Delivered in 3 weeks, ahead of deadline, with zero operational disruption. The new dashboard reached 1,964 views and 44 unique viewers; Quality Cube was later adopted by Vendor Management.</p></div>
-          <a class="doc-link" href="UAT_Plan_Dashboard_Migration_QI.pdf" target="_blank" rel="noopener">
-            <span class="doc-link-icon">◆</span> View UAT Plan (PDF) <span class="doc-link-arrow">→</span>
-          </a>
+          <div class="doc-links-row">
+            <a class="doc-link" href="UAT_Plan_Dashboard_Migration_QI.pdf" target="_blank" rel="noopener">
+              <span class="doc-link-icon">◆</span> View UAT Plan (PDF) <span class="doc-link-arrow">→</span>
+            </a>
+            <a class="doc-link" href="Project_Plan_Dashboard_Migration_Syafriandi.pdf" target="_blank" rel="noopener">
+              <span class="doc-link-icon">◆</span> View Project Plan (PDF) <span class="doc-link-arrow">→</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -294,9 +300,26 @@
           </div>
         </div>
         <div class="project-body">
-          <div class="pblock"><div class="k">Problem</div><p>Inconsistent KPI definitions and limited root-cause visibility were capping performance gains across four regions.</p></div>
-          <div class="pblock"><div class="k">Approach</div><p>Standardized KPI logic, ran root-cause and drill-down analysis on accuracy, AHT, and idle-rate gaps, built agent performance scorecards, and presented findings with recommendations in Weekly Business Reviews.</p></div>
-          <div class="impact"><p>Idle Rate 9.5% → 0.0%; Utilization 78.4% → 88.7%; Appeals AHT 9.9 → 3.1 min; Content Review accuracy 85.9% → 96.1%; Account Suspension accuracy 88.0% → 97.2%.</p></div>
+          <div class="pblock"><div class="k">Problem</div><p>Appeals AHT was running well above target, dragging down throughput — with no clear root cause identified across four regions.</p></div>
+          <div class="pblock"><div class="k">Approach</div><p>Deep-dived AHT by isolating active task time from idle time within each session, uncovering Idle Rate as the actual driver. Standardized KPI logic, built a real-time idle tracker, and targeted the behavior directly through coaching, an SME escalation SLA, and daily (not weekly) visibility.</p></div>
+          <div class="impact"><p>Idle Rate 9.5% → 0.0%, which directly drove Appeals AHT down from 9.9 → 3.1 min. Utilization 78.4% → 88.7%; Content Review accuracy 85.9% → 96.1%; Account Suspension accuracy 88.0% → 97.2%.</p></div>
+          <div class="doc-links-row">
+            <a class="doc-link" href="Case_Study_Idle_Rate_Reduction_Syafriandi.pdf" target="_blank" rel="noopener">
+              <span class="doc-link-icon">◆</span> Read Case Study (PDF) <span class="doc-link-arrow">→</span>
+            </a>
+            <a class="doc-link" href="Performance_Framework_AHT_IdleRate_Syafriandi.pdf" target="_blank" rel="noopener">
+              <span class="doc-link-icon">◆</span> Performance Framework (PDF) <span class="doc-link-arrow">→</span>
+            </a>
+            <a class="doc-link" href="Meeting_Cadence_Template_Syafriandi.pdf" target="_blank" rel="noopener">
+              <span class="doc-link-icon">◆</span> Meeting Cadence Template (PDF) <span class="doc-link-arrow">→</span>
+            </a>
+            <a class="doc-link" href="Specialists_Idle_Summary_Report_Sample.xlsx" target="_blank" rel="noopener">
+              <span class="doc-link-icon">◆</span> Idle Rate Tracker (Excel) <span class="doc-link-arrow">→</span>
+            </a>
+            <a class="doc-link" href="Specialists_AHT_Summary_Report_Sample.xlsx" target="_blank" rel="noopener">
+              <span class="doc-link-icon">◆</span> AHT Tracker (Excel) <span class="doc-link-arrow">→</span>
+            </a>
+          </div>
         </div>
       </div>
 
