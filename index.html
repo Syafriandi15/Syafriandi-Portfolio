@@ -193,6 +193,7 @@
     <div class="status-pill"><span class="dot"></span>AVAILABLE FOR OPPORTUNITIES</div>
     <nav>
       <a href="#work">Work</a>
+      <a href="#dashboard">Dashboard</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -245,7 +246,7 @@
         </div>
         <div class="project-body">
           <div class="pblock"><div class="k">Problem</div><p>Fragmented reporting across global AIO and RAT teams left no single source of truth — manual report prep was consuming hours every week across regions.</p></div>
-          <div class="pblock"><div class="k">Approach</div><p>Designed and centralized a KPI dashboard combining individual, regional, team-lead, and volume/productivity views into one platform, writing SQL queries to join and filter Data Engineering's raw tables into the specific dimensions and metrics the dashboard needed, standardized KPI logic such as Appeal Rate and Idle Rate, and automated the underlying weekly reporting workflow.</p></div>
+          <div class="pblock"><div class="k">Approach</div><p>Designed and centralized a KPI dashboard combining individual, regional, team-lead, and volume/productivity views into one platform, standardized KPI logic such as Appeal Rate and Idle Rate, and automated the underlying weekly reporting workflow.</p></div>
           <div class="impact"><p>Cut report prep time 50% (60 → 30 min), saved ~24 hours per performance cycle, and was adopted by 30+ unique viewers — used in 1:1s, Weekly Business Reviews, and headcount planning.</p></div>
         </div>
       </div>
@@ -337,13 +338,13 @@
         </div>
         <div class="project-body">
           <div class="pblock"><div class="k">Problem</div><p>Content Review accuracy (85.9%) and Account Suspension accuracy (88.0%) were both below target, with specialist Appeal Rate sitting low at 58.1% — suggesting errors were going both undetected and uncontested.</p></div>
-          <div class="pblock"><div class="k">Approach</div><p>Ran a fishbone root cause analysis with QC and SME, Team leads, tracing low accuracy back to low specialist confidence in appealing mismatches — which itself traced back to only having monthly, not weekly, visibility into their own patterns. Partnered with the APAC CO Manager to build a Moderators Appeal/Confirmation Rate dashboard, and added a Feishu Base automation pushing a weekly scorecard to Team Leads and specialists, giving them the evidence to act on.</p></div>
+          <div class="pblock"><div class="k">Approach</div><p>Ran a fishbone root cause analysis with QC and SME leads, tracing low accuracy back to low specialist confidence in appealing mismatches — which itself traced back to only having monthly, not weekly, visibility into their own patterns. Partnered with the APAC CO Manager to build a Moderators Appeal/Confirmation Rate dashboard, and added a Feishu Base automation pushing a weekly scorecard to Team Leads and specialists, giving them the evidence to act on.</p></div>
           <div class="impact"><p>Appeal Rate rose 58.1% (W15) → 87.5% (W32), directly driving Content Review accuracy 85.9% → 96.1% and Account Suspension accuracy 88.0% → 97.2% (Mar–Jul 2024).</p></div>
           <div class="doc-links-row">
             <a class="doc-link" href="Project_Charter_Accuracy_Improvement_Syafriandi.pdf" target="_blank" rel="noopener">
               <span class="doc-link-icon">◆</span> Project Charter (PDF) <span class="doc-link-arrow">→</span>
             </a>
-            <a class="doc-link" href="Root Cause Analysis.pdf" target="_blank" rel="noopener">
+            <a class="doc-link" href="RCA_Content_Review_Accuracy_Syafriandi.pdf" target="_blank" rel="noopener">
               <span class="doc-link-icon">◆</span> Root Cause Analysis (PDF) <span class="doc-link-arrow">→</span>
             </a>
           </div>
@@ -351,6 +352,48 @@
       </div>
 
     </div>
+  </section>
+
+  <section id="dashboard">
+    <div class="sec-head">
+      <span class="sec-num">01B</span>
+      <div>
+        <div class="sec-title">Live Dashboard</div>
+        <div class="sec-sub">Built in Tableau Public from the global performance dataset above — Idle Rate and AHT trends across APAC, LATAM, and EMEA.</div>
+      </div>
+    </div>
+
+    <div style="background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:20px; overflow-x:auto;">
+      <div class='tableauPlaceholder' id='viz1789918187423' style='position: relative'>
+        <noscript><a href='#'><img alt='Overall Performance ' src='https://public.tableau.com/static/images/CT/CTQC6SD2H/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='path' value='shared&#47;CTQC6SD2H' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/CT/CTQC6SD2H/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1789918187423');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';
+        vizElement.style.height=(divElement.offsetWidth>800 ? '795px' : '1000px');
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <a class="doc-link" href="https://public.tableau.com/shared/CTQC6SD2H?:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener" style="margin-top:16px;">
+      <span class="doc-link-icon">◆</span> Open full dashboard on Tableau Public <span class="doc-link-arrow">→</span>
+    </a>
   </section>
 
   <section id="experience">
